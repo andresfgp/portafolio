@@ -1,33 +1,48 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import '../assets/styles/components/Contact.scss';
-import PropTypes from 'prop-types';
 import { registerRequest } from '../actions';
 
 const Contact = (props) => {
-  const [form, setValues] = useState({
-    email: '',
-  });
+  // const [form, setValues] = React.useState({
+  //   email: '',
+  // });
 
-  const handleInput = (event) => { //recopilar informacion de formulario
-    setValues({
-      ...form,
-      [event.target.name]: event.target.value,
-    });
-  };
+  // const handleInput = (event) => { //recopilar informacion de formulario
+  //   setValues({
+  //     ...form,
+  //     [event.target.name]: event.target.value,
+  //   });
+  // };
 
-  const handleSubmit = (event) => { // enviar informacion formulario
-    event.preventDefault();
-    props.registerRequest(form); // informacion enviada
-  };
+  // const handleSubmit = (event) => { // enviar informacion formulario
+  //   event.preventDefault();
+  //   props.registerRequest(form); // informacion enviada
+  // };
 
   return (
     <section className='contact'>
-      <div>
+      <div className='contact__text'>
         {/* eslint-disable-next-line react/no-unescaped-entities */}
-        <h3>Let's try something new!</h3>
+        <div className='contact__text-name'>
+          <div>
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
+            <h3>Let's try something new!</h3>
+          </div>
+          <div className='contact__text-nameH3'>
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
+            <h3>I'd love to hear from you.</h3>
+          </div>
+        </div>
+        <div className='contact__text-email'>
+          <h3>
+            Email me at
+            <a href='mailto:andres.fgp@hotmail.com'>andres.fgp@hotmail.com</a>
+          </h3>
+        </div>
+
       </div>
-      <form className='form-email' onSubmit={handleSubmit}>
+      {/* <form className='form-email' onSubmit={handleSubmit}>
         <input
           name='email'
           type='text'
@@ -36,13 +51,9 @@ const Contact = (props) => {
         />
         {' '}
         <button type='submit'>Send</button>
-      </form>
+      </form> */}
     </section>
   );
-};
-
-Contact.propTypes = {
-  registerRequest: PropTypes.func,
 };
 
 const mapDispatchToProps = {
@@ -50,3 +61,4 @@ const mapDispatchToProps = {
 };
 
 export default connect(null, mapDispatchToProps)(Contact);
+

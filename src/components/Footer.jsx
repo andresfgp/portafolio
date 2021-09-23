@@ -24,8 +24,17 @@ const Footer = (props) => {
           <a href='https://www.instagram.com/andresfgp/' target='_blank' rel='noreferrer'><img src={instagram} alt='instagram' /></a>
         </div>
       </div>
+      <div className='footer__text'>
+        <h5>
+          Fabricated by
+          <strong>Andrés García © 2021.</strong>
+          {' '}
+          Updated Sep, 2021.
+        </h5>
+      </div>
     </footer>
   );
 };
 
 export default Footer;
+

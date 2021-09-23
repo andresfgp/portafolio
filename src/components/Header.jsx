@@ -1,18 +1,27 @@
 import React from 'react';
 import '../assets/styles/components/Header.scss';
 import logo from '../assets/static/logo.png';
-import Search from './Search';
+// import Search from './Search';
+import { ReactComponent as Menu } from '../assets/static/menu.svg';
+import { ReactComponent as Download } from '../assets/static/download.svg';
+import cvAFG from '../assets/static/CV_AFG.pdf';
 
 const Header = (props) => {
   return (
     <header className='header'>
       <img className='header__logo' src={logo} alt='Logo' />
-      <div className='header__menu'>
-        <nav>
+      <nav>
+        {/* <Search isHome /> */}
+        <div className='header__menu--download'>
+          <a href={cvAFG} download='cvAFG'>
+            <Download className='header__menu--downloadImg' />
+          </a>
+        </div>
+        <div className='header__menu'>
+          <div className='header__menu--profile'>
+            <Menu className='header__menu--profileImg' />
+          </div>
           <ul>
-            <li>
-              <Search isHome />
-            </li>
             <li>
               <a href='#portfolio'>
                 Portfolio
@@ -30,8 +39,8 @@ const Header = (props) => {
               </a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
   );
 };

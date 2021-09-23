@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/styles/components/Hero.scss';
-import foto from '../assets/static/foto.png';
+import foto from '../assets/static/foto2.png';
 
 const Hero = () => {
   return (
@@ -9,19 +9,17 @@ const Hero = () => {
         <h1 className='hero__text-name'>
           {/* eslint-disable-next-line react/no-unescaped-entities */}
           Hi, I'm
+          {' '}
           <strong>
-            {' '}
             Andrés García
           </strong>
-          <span>&#160;</span>
         </h1>
         <h1 className='hero__text-front'>
           Frontend Developer,
-          <span>&#160;</span>
         </h1>
         <h1 className='hero__text-ing'>
           Electronic and Electrical Engineer!
-          <span>&#160;</span>
+          <span> &#160;</span>
         </h1>
       </div>
       <figure className='hero__figure'>

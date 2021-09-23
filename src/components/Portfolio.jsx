@@ -3,33 +3,39 @@ import '../assets/styles/components/Portfolio.scss';
 import PropTypes from 'prop-types';
 
 const Portfolio = (props) => {
-  const { title, company, dateStart, dateEnd, description, url, image } = props;
+  const { title, dateStart, dateEnd, description, image, imageCountry } = props;
 
   return (
     <section className='portfolio'>
       <article className='project'>
         <div className='project-text'>
           <h3 className='project-title'>{title}</h3>
-          <h5 className='project-company'>{company}</h5>
           <p className='project-date_start'>
-            Start date:
+            <strong>
+              Start date:
+            </strong>
             {' '}
             {dateStart}
           </p>
           <p className='project-date_end'>
-            End date:
+            <strong>
+              End date:
+            </strong>
             {' '}
             {dateEnd}
           </p>
           <p className='project-description'>
-            Description:
+            <strong>
+              Description:
+            </strong>
             {' '}
             {description}
           </p>
         </div>
-        <figure className='project-imageContainer'>
-          <a href={url}><img className='project-image' src={image} alt={title} /></a>
-        </figure>
+        <div className='project-image'>
+          <img className='project-imageJob' src={image} alt={title} />
+          <img className='project-imageCountry' src={imageCountry} alt='Flat' />
+        </div>
       </article>
     </section>
   );
@@ -37,12 +43,13 @@ const Portfolio = (props) => {
 
 Portfolio.propTypes = {
   title: PropTypes.string,
-  company: PropTypes.string,
+  // company: PropTypes.string,
   dateStart: PropTypes.string,
   dateEnd: PropTypes.string,
   description: PropTypes.string,
-  url: PropTypes.string,
+  // url: PropTypes.string,
   image: PropTypes.string,
 };
 
 export default Portfolio;
+

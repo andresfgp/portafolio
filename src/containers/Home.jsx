@@ -45,7 +45,7 @@ const Home = (props) => {
       )}
       <Hero />
       {portfolio.length > 0 && (
-        <Categories title='Portfolio' id='portfolio'>
+        <Categories title='Work done as an Engineer!' id='portfolio' isPortfolio>
           {
             portfolio.sort((a, b) => { return b.year - a.year; }).map((item) => (
               <Portfolio
@@ -58,7 +58,7 @@ const Home = (props) => {
         </Categories>
       )}
       {certificate.length > 0 && (
-        <Categories title='More about my experience' id='certificates' isCertificate>
+        <Categories title='Certificates' id='certificates' isCertificate>
           <Certificate>
             {
               certificate.sort((a, b) => { return b.year - a.year; }).map((item) => (
