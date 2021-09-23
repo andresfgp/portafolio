@@ -11,6 +11,8 @@
     left: 0;
     top: 0;
     z-index: 1;
+    padding-right: 20px;
+
 
 }
 
@@ -54,7 +56,7 @@ list-style: none;
 padding: 0px;
 position: absolute;
 width: 180px;
-margin: 70px 20px 0px 0px;
+margin: 70px 0px 0px 0px;
 border-radius: 10px;
 background-color: white;
 text-align: left;
@@ -80,19 +82,24 @@ border-radius: 10px;
 }
   
 .header__menu--profile {
-width: 70px;
-display: flex;
-align-items: center;
-justify-content: flex-end;
-cursor: pointer;
-text-align: left;
+    height:70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    text-align: left;
+    padding-right: 5px;
+    padding-left: 5px;
 }
   
 .header__menu--profileImg {
-margin-right: 20px;
-width: 40px;
-color: white;
-height:auto;
+    width: 40px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    text-align: left;
 }
 
 .header__menu--profileImg:hover {
@@ -100,20 +107,23 @@ height:auto;
 }
   
 .header__menu--download {
-    width: 60px;
+    height:70px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     cursor: pointer;
     text-align: left;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 .header__menu--download a{
     padding:0px;
 }
     
 .header__menu--downloadImg {
-width: 40px;
-color: white;
+    width: 40px;
+    height:40px;
+    color: white;
 }
 .header__menu--downloadImg:hover {
     color: #FF6347;
