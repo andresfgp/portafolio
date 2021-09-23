@@ -88,7 +88,7 @@ const initialState = {
       'company': 'CONTINENTALGOLD',
       'dateStart': '2018/12/01',
       'dateEnd': '2019/03/30',
-      'description': 'Desing,testing and commissioning of the electrical substation control system (level 2).',
+      'description': 'Desing, testing and commissioning of the electrical substation control system (level 2).',
       'image': image.continental,
       'imageCountry': image.colombia,
     },

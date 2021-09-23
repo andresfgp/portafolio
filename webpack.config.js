@@ -57,6 +57,7 @@ module.exports = { //modulo a exportar
     new HtmlWebpackPlugin({
       template: './public/index.html',
       filename: './index.html',
+      favicon: './public/logo.png',
     }),
     new MiniCssExtractPlugin({
       filename: 'assets/[name].css', //referencia para trabajar desde webpack con sass
