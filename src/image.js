@@ -24,6 +24,9 @@ import diploma12 from './assets/static/certificate/12.png';
 import diploma13 from './assets/static/certificate/13.png';
 import diploma14 from './assets/static/certificate/14.png';
 import diploma15 from './assets/static/certificate/15.png';
+import platzivideos from './assets/static/platzivideos.png';
+import todoMachine from './assets/static/todo-machine.png';
+import webBadges from './assets/static/web-badges.png';
 
 const image = {
   tesla,
@@ -52,6 +55,9 @@ const image = {
   diploma13,
   diploma14,
   diploma15,
+  platzivideos,
+  todoMachine,
+  webBadges,
 };
 
 export default image;

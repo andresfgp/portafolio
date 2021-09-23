@@ -1,12 +1,12 @@
 import React from 'react';
-import '../assets/styles/components/Portfolio.scss';
+import '../assets/styles/components/Portfolio2.scss';
 import PropTypes from 'prop-types';
 
-const Portfolio = (props) => {
+const Portfolio2 = (props) => {
   const { title, dateStart, dateEnd, description, image, imageCountry } = props;
 
   return (
-    <section className='portfolio'>
+    <section className='portfolio2'>
       <article className='project'>
         <div className='project-text'>
           <h3 className='project-title'>{title}</h3>
@@ -41,7 +41,7 @@ const Portfolio = (props) => {
   );
 };
 
-Portfolio.propTypes = {
+Portfolio2.propTypes = {
   title: PropTypes.string,
   // company: PropTypes.string,
   dateStart: PropTypes.string,
@@ -51,5 +51,5 @@ Portfolio.propTypes = {
   image: PropTypes.string,
 };
 
-export default Portfolio;
+export default Portfolio2;
 

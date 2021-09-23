@@ -4,22 +4,24 @@ import PropTypes from 'prop-types';
 import '../assets/styles/App.scss';
 import '../assets/styles/components/Home.scss';
 import Hero from '../components/Hero';
-import Portfolio from '../components/Portfolio';
+import Portfolio1 from '../components/Portfolio1';
+import Portfolio2 from '../components/Portfolio2';
 import CarouselItem from '../components/CarouselItem';
 import Categories from '../components/Categories';
 import Certificate from '../components/Certificate';
 import Contact from '../components/Contact';
 
 const Home = (props) => {
-  const { searchResultPortfolio, searchResultCertificate, portfolio, certificate } = props;
+  const { portfolio1, portfolio2, certificate } = props;
 
   return (
     <div className='home'>
-      {(searchResultPortfolio.length) > 0 && (
-        <Categories title='Portfolio Search Information' isSearch>
+      <Hero />
+      {portfolio1.length > 0 && (
+        <Categories title='Work done as a Frontend Developer!' id='portfolio' isPortfolio1>
           {
-            searchResultPortfolio.map((item) => (
-              <Portfolio
+            portfolio1.map((item) => (
+              <Portfolio1
                 key={item.id}
                 // eslint-disable-next-line react/jsx-props-no-spreading
                 {...item}
@@ -28,27 +30,11 @@ const Home = (props) => {
           }
         </Categories>
       )}
-      {(searchResultCertificate.length) > 0 && (
-        <Categories title='Certificates Search Information' isSearch>
-          <Certificate>
-            {
-              searchResultCertificate.map((item) => (
-                <CarouselItem
-                  key={item.id}
-                  // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...item}
-                />
-              ))
-            }
-          </Certificate>
-        </Categories>
-      )}
-      <Hero />
-      {portfolio.length > 0 && (
-        <Categories title='Work done as an Engineer!' id='portfolio' isPortfolio>
+      {portfolio2.length > 0 && (
+        <Categories title='Work done as an Engineer!' isPortfolio2>
           {
-            portfolio.sort((a, b) => { return b.year - a.year; }).map((item) => (
-              <Portfolio
+            portfolio2.sort((a, b) => { return b.year - a.year; }).map((item) => (
+              <Portfolio2
                 key={item.id}
                 // eslint-disable-next-line react/jsx-props-no-spreading
                 {...item}
@@ -81,17 +67,15 @@ const Home = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    searchResultPortfolio: state.searchResultPortfolio,
-    searchResultCertificate: state.searchResultCertificate,
-    portfolio: state.portfolio,
+    portfolio1: state.portfolio1,
+    portfolio2: state.portfolio2,
     certificate: state.certificate,
   };
 };
 
 Home.propTypes = {
-  searchResultPortfolio: PropTypes.array,
-  searchResultCertificate: PropTypes.array,
-  portfolio: PropTypes.array,
+  portfolio1: PropTypes.array,
+  portfolio2: PropTypes.array,
   certificate: PropTypes.array,
 };
 export default connect(mapStateToProps, null)(Home);

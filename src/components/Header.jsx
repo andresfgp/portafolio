@@ -24,7 +24,7 @@ const Header = (props) => {
           <ul>
             <li>
               <a href='#portfolio'>
-                Portfolio
+                Work
               </a>
             </li>
             <li>

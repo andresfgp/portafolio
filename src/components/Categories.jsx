@@ -4,13 +4,14 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 const Categories = (props) => { //children es un componente hijo que se pasa por medio de los props, el cual se llama directamente
-  const { children, title, id, isSearch, isCertificate, isContact, isPortfolio } = props;
+  const { children, title, id, isSearch, isCertificate, isContact, isPortfolio1, isPortfolio2 } = props;
 
   const inputStyles = classNames('categories', {
     isSearch,
     isCertificate,
     isContact,
-    isPortfolio,
+    isPortfolio1,
+    isPortfolio2,
   });
   return (
     <div className={inputStyles}>

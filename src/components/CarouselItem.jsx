@@ -34,6 +34,7 @@ const CertificateItem = (props) => {
           </div>
           <h3>
             Date:
+            {' '}
             {date}
           </h3>
         </div>
