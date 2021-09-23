@@ -19,15 +19,17 @@ const Home = (props) => {
       <Hero />
       {portfolio1.length > 0 && (
         <Categories title='Work done as a Frontend Developer!' id='portfolio' isPortfolio1>
-          {
-            portfolio1.map((item) => (
-              <Portfolio1
-                key={item.id}
-                // eslint-disable-next-line react/jsx-props-no-spreading
-                {...item}
-              />
-            ))
-          }
+          <div className='home__portfolio1'>
+            {
+              portfolio1.map((item) => (
+                <Portfolio1
+                  key={item.id}
+                  // eslint-disable-next-line react/jsx-props-no-spreading
+                  {...item}
+                />
+              ))
+            }
+          </div>
         </Categories>
       )}
       {portfolio2.length > 0 && (
