@@ -10,6 +10,7 @@ import CarouselItem from '../components/CarouselItem';
 import Categories from '../components/Categories';
 import Certificate from '../components/Certificate';
 import Contact from '../components/Contact';
+import About from '../components/About';
 
 const Home = (props) => {
   const { portfolio1, portfolio2, certificate } = props;
@@ -17,6 +18,11 @@ const Home = (props) => {
   return (
     <div className='home'>
       <Hero />
+      <Categories title='About' id='about' isAbout>
+        <div className='home__about'>
+          <About />
+        </div>
+      </Categories>
       {portfolio1.length > 0 && (
         <Categories title='Work done as a Frontend Developer!' id='portfolio' isPortfolio1>
           <div className='home__portfolio1'>

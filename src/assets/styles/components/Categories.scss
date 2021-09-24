@@ -8,6 +8,16 @@
   background: linear-gradient(#1C3643,#98a0a8);
 }
 
+.isAbout{
+  padding-top: 0;
+  padding-left: 100px;
+  background: #1C3643;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+
 .isPortfolio1{
   background: #1C3643;
   display: flex;
@@ -50,5 +60,8 @@
     /* padding:0px; */
     display: flex;
     flex-direction: column;
+  }
+  .isAbout{
+    padding-left: 20px;
   }
 }

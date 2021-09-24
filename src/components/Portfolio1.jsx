@@ -14,6 +14,7 @@ const Portfolio1 = (props) => {
         <div className='portfolio1__link-details'>
           <h3>{nameWeb}</h3>
         </div>
+        <div className='portfolio1__link-details2' />
       </a>
     </section>
   );
