@@ -22,6 +22,15 @@
   margin-bottom: 20px;
 }
 
+.home__skills{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-self: start;
+  justify-self: start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 640px)
 {
   .home__portfolio1{

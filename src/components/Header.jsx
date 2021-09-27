@@ -28,6 +28,11 @@ const Header = (props) => {
               </a>
             </li>
             <li>
+              <a href='#skills'>
+                Technical Skills
+              </a>
+            </li>
+            <li>
               <a href='#portfolio'>
                 Work
               </a>

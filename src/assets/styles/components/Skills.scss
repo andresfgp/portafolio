@@ -1,0 +1,90 @@
+.Skills{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Skills__container-text>p{
+    width: 70%;
+    color:white ;
+    text-align: start;
+}
+
+.Skills__container-bar1{
+    justify-items: center;
+}
+.Skills__container-bar1>ul{
+    padding: 0;
+    padding-right: 30px;
+}
+
+.Skills__container-bar{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.Skills__container-bar1>ul>li{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 80px 80%;
+    gap:10px;
+    margin-bottom: 20px;
+}
+
+.Skills__container-bar1>ul>li>h4{
+    color:white;
+    margin-right: 10px;
+}
+
+#Progress_Status {
+    display: flex;
+    position: relative;
+    width: 80%;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 15px;
+
+}
+    
+  #myprogressBar {
+    height: 20px;
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    background-color: #00D8FF;
+    text-align: center;
+    line-height: 32px;
+    color: black;
+    border-radius: 15px;
+  }
+
+
+  @keyframes load {
+    0% { width: 0; }
+  }
+
+
+@media only screen and (max-width: 640px)
+{
+    .Skills__container-text>p{
+        width: 90%;
+    }
+    .Skills__container-bar{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+        margin: 0;
+    }
+    .Skills__container-bar1>ul{
+        padding: 0;
+    }
+    .Skills__container-bar1>ul>li{
+        margin-bottom: 10px;
+    }
+    .Skills__container-bar1>ul>li{
+        grid-template-columns: 80px 92%;
+    }
+
+}

@@ -11,6 +11,7 @@ import Categories from '../components/Categories';
 import Certificate from '../components/Certificate';
 import Contact from '../components/Contact';
 import About from '../components/About';
+import Skills from '../components/Skills';
 
 const Home = (props) => {
   const { portfolio1, portfolio2, certificate } = props;
@@ -21,6 +22,11 @@ const Home = (props) => {
       <Categories title='About' id='about' isAbout>
         <div className='home__about'>
           <About />
+        </div>
+      </Categories>
+      <Categories title='Technical Skills' id='skills' isSkills>
+        <div className='home__skills'>
+          <Skills />
         </div>
       </Categories>
       {portfolio1.length > 0 && (
