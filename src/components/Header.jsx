@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/styles/components/Header.scss';
-import logo from '../assets/static/logo.png';
+import logo from '../assets/static/logo2.png';
 // import Search from './Search';
 import { ReactComponent as Menu } from '../assets/static/menu.svg';
 import { ReactComponent as Download } from '../assets/static/download.svg';

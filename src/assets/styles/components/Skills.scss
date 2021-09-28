@@ -13,7 +13,11 @@
 }
 
 .Skills__container-bar{
-    width: 70%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 0;
 }
 
 .Skills__container-bar1{
@@ -24,12 +28,6 @@
     padding-right: 30px;
 }
 
-.Skills__container-bar{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin: 0;
-}
 
 .Skills__container-bar1{
     justify-self: center;
@@ -78,6 +76,9 @@
 
 @media only screen and (max-width: 640px)
 {
+    .Skills__container-bar{
+        width: 70%;
+    }
     .Skills__container-text>p{
         width: 90%;
     }
