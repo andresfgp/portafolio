@@ -23,7 +23,10 @@ const Skills = () => {
         <div className='Skills__container-bar1'>
           <ul>
             <li>
-              <Html className='Skills__container-barImg' />
+              <ReactLogo className='Skills__container-barImg' id='reactLogo' />
+            </li>
+            <li>
+              <Js className='Skills__container-barImg' />
             </li>
             <li>
               <Css className='Skills__container-barImg' />
@@ -32,10 +35,7 @@ const Skills = () => {
               <Sass className='Skills__container-barImg' />
             </li>
             <li>
-              <Js className='Skills__container-barImg' />
-            </li>
-            <li>
-              <ReactLogo className='Skills__container-barImg' id='reactLogo' />
+              <Html className='Skills__container-barImg' />
             </li>
           </ul>
         </div>
