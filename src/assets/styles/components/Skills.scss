@@ -42,10 +42,6 @@
 }
 
 .Skills__container-barImg{
-    -moz-animation: spinHorizontal2 .8s linear;
-    -o-animation: spinHorizontal2 .8s normal linear;    
-    -webkit-animation: spinHorizontal2 .8s normal linear;
-    animation: spinHorizontal2 .8s normal linear;
     color:white;
     margin: 0px;
     width: 100px;
@@ -68,10 +64,6 @@
     0% { transform: rotateY(0deg); }
     100% { transform: rotateY(360deg); }
 }
-@keyframes spinHorizontal2 {
-    0% { transform: rotateY(0deg); }
-    100% { transform: rotateY(360deg); }
-}
 
 
 @media only screen and (max-width: 640px)
@@ -84,13 +76,6 @@
     }
     .Skills__container-bar1>ul{
         padding: 0;
-    }
-    .Skills__container-barImg{
-        -moz-animation: none;
-        -o-animation: none;    
-        -webkit-animation: none;
-        animation: none;
-    
     }
 
 }
