@@ -1,5 +1,4 @@
 .Skills{
-    padding-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,6 +6,7 @@
 }
 
 .Skills__container-text>p{
+    padding-left: 20px;
     width: 70%;
     color:white ;
     text-align: start;
