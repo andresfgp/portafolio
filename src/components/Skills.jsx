@@ -1,19 +1,17 @@
 import React from 'react';
 import '../assets/styles/components/Skills.scss';
+import { ReactComponent as Html } from '../assets/static/logos/html.svg';
+import { ReactComponent as Css } from '../assets/static/logos/css.svg';
+import { ReactComponent as Sass } from '../assets/static/logos/sass.svg';
+import { ReactComponent as Js } from '../assets/static/logos/js.svg';
+import { ReactComponent as ReactLogo } from '../assets/static/logos/react.svg';
+import { ReactComponent as Git } from '../assets/static/logos/git.svg';
+import { ReactComponent as Mysql } from '../assets/static/logos/mysql.svg';
+import { ReactComponent as Phyton } from '../assets/static/logos/python.svg';
+import { ReactComponent as Cplusplus } from '../assets/static/logos/c++.svg';
+import { ReactComponent as Java } from '../assets/static/logos/java.svg';
 
 const Skills = () => {
-
-  // window.addEventListener('scroll', () => {
-  //   const animation = document.getElementById('myprogressBar');
-  //   const positionObj = animation.getBoundingClientRect().top;
-  //   console.log(positionObj);
-  //   const sizeScreen = window.innerHeight / 3;
-
-  //   if (positionObj < sizeScreen) {
-  //     console.log(animation.style);
-  //     animation.style.animation = 'load 3s normal forwards';
-  //   }
-  // });
 
   return (
     <section className='Skills'>
@@ -25,56 +23,38 @@ const Skills = () => {
         <div className='Skills__container-bar1'>
           <ul>
             <li>
-              <h4>HTML</h4>
-              <div id='Progress_Status'>
-                <div id='myprogressBar' style={{ width: '90%' }} />
-              </div>
+              <Html className='Skills__container-barImg' />
             </li>
             <li>
-              <h4>CSS/SASS</h4>
-              <div id='Progress_Status'>
-                <div id='myprogressBar' style={{ width: '80%' }} />
-              </div>
+              <Css className='Skills__container-barImg' />
             </li>
             <li>
-              <h4>JAVASCRIPT</h4>
-              <div id='Progress_Status'>
-                <div id='myprogressBar' style={{ width: '80%' }} />
-              </div>
+              <Sass className='Skills__container-barImg' />
             </li>
             <li>
-              <h4>REACT/REDUX</h4>
-              <div id='Progress_Status'>
-                <div id='myprogressBar' style={{ width: '75%' }} />
-              </div>
+              <Js className='Skills__container-barImg' />
+            </li>
+            <li>
+              <ReactLogo className='Skills__container-barImg' id='reactLogo' />
             </li>
           </ul>
         </div>
         <div className='Skills__container-bar1'>
           <ul>
             <li>
-              <h4>SQL SERVER</h4>
-              <div id='Progress_Status'>
-                <div id='myprogressBar' style={{ width: '35%' }} />
-              </div>
+              <Git className='Skills__container-barImg' />
             </li>
             <li>
-              <h4>PYTHON</h4>
-              <div id='Progress_Status'>
-                <div id='myprogressBar' style={{ width: '60%' }} />
-              </div>
+              <Mysql className='Skills__container-barImg' />
             </li>
             <li>
-              <h4>JAVA</h4>
-              <div id='Progress_Status'>
-                <div id='myprogressBar' style={{ width: '60%' }} />
-              </div>
+              <Phyton className='Skills__container-barImg' />
             </li>
             <li>
-              <h4>C++</h4>
-              <div id='Progress_Status'>
-                <div id='myprogressBar' style={{ width: '60%' }} />
-              </div>
+              <Cplusplus className='Skills__container-barImg' />
+            </li>
+            <li>
+              <Java className='Skills__container-barImg' />
             </li>
           </ul>
         </div>
