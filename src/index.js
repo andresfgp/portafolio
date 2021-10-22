@@ -27,7 +27,7 @@ const initialState = {
     { 'id': 4,
       'nameWeb': 'Equipo Developers',
       'imgWeb': image.equipoDevelopers,
-      'urlWeb': 'https:equipodevelopers.netlify.app/',
+      'urlWeb': 'https://equipodevelopers.netlify.app/',
     },
   ],
   'portfolio2': [
