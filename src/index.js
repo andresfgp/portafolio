@@ -24,6 +24,11 @@ const initialState = {
       'imgWeb': image.todoMachine,
       'urlWeb': 'https://andresfgp.github.io/todo-machine/',
     },
+    { 'id': 4,
+      'nameWeb': 'Equipo Developers',
+      'imgWeb': image.equipoDevelopers,
+      'urlWeb': 'https:equipodevelopers.netlify.app/',
+    },
   ],
   'portfolio2': [
     {
