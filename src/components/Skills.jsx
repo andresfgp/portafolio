@@ -4,7 +4,9 @@ import { ReactComponent as Html } from '../assets/static/logos/html.svg';
 import { ReactComponent as Css } from '../assets/static/logos/css.svg';
 import { ReactComponent as Sass } from '../assets/static/logos/sass.svg';
 import { ReactComponent as Js } from '../assets/static/logos/js.svg';
+import { ReactComponent as Ts } from '../assets/static/logos/ts.svg';
 import { ReactComponent as ReactLogo } from '../assets/static/logos/react.svg';
+import { ReactComponent as AngularLogo } from '../assets/static/logos/angular.svg';
 import { ReactComponent as Git } from '../assets/static/logos/git.svg';
 import { ReactComponent as Mysql } from '../assets/static/logos/mysql.svg';
 import { ReactComponent as Phyton } from '../assets/static/logos/python.svg';
@@ -26,7 +28,10 @@ const Skills = () => {
               <ReactLogo className='Skills__container-barImg' id='reactLogo' />
             </li>
             <li>
-              <Js className='Skills__container-barImg' />
+              <AngularLogo className='Skills__container-barImg' />
+            </li>
+            <li>
+              <Js className='Skills__container-barImg2' />
             </li>
             <li>
               <Css className='Skills__container-barImg' />
@@ -43,6 +48,9 @@ const Skills = () => {
           <ul>
             <li>
               <Git className='Skills__container-barImg' />
+            </li>
+            <li>
+              <Ts className='Skills__container-barImg2' />
             </li>
             <li>
               <Mysql className='Skills__container-barImg' />

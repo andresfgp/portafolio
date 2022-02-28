@@ -36,6 +36,10 @@
 
 .Skills__container-bar1>ul{
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .Skills__container-bar1>ul>li{
     margin: 0;
@@ -48,12 +52,19 @@
     height: 80px;
 
 }
-.Skills__container-barImg:hover{
-    -moz-animation: spinHorizontal .8s linear;
-    -o-animation: spinHorizontal .8s normal linear;    
-    -webkit-animation: spinHorizontal .8s normal linear;
-    animation: spinHorizontal .8s normal linear;
+.Skills__container-barImg2{
+    color:white;
+    margin: 0px;
+    width: 50px;
+    height: 80px;
 
+}
+.Skills__container-barImg:hover,
+.Skills__container-barImg2:hover{
+    -moz-animation: spinHorizontal 1.2s linear;
+    -o-animation: spinHorizontal 1.2s normal linear;    
+    -webkit-animation: spinHorizontal 1.2s normal linear;
+    animation: spinHorizontal 1.2s normal linear;
 }
 
 #reactLogo:hover{
