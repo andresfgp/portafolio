@@ -28,6 +28,10 @@ import platzivideos from './assets/static/platzivideos.png';
 import todoMachine from './assets/static/todo-machine.png';
 import webBadges from './assets/static/web-badges.png';
 import equipoDevelopers from './assets/static/equipoDevelopers.png';
+import fisentiva from './assets/static/fisentiva.png';
+import dinvy from './assets/static/dinvy.png';
+import react from './assets/static/react.png';
+import angular from './assets/static/angular.png';
 
 const image = {
   tesla,
@@ -56,10 +60,14 @@ const image = {
   diploma13,
   diploma14,
   diploma15,
+  react,
+  angular,
   platzivideos,
   todoMachine,
   webBadges,
   equipoDevelopers,
+  fisentiva,
+  dinvy,
 };
 
 export default image;

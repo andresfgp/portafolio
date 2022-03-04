@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/styles/components/Skills.scss';
-import { ReactComponent as Html } from '../assets/static/logos/html.svg';
+// import { ReactComponent as Html } from '../assets/static/logos/html.svg';
 import { ReactComponent as Css } from '../assets/static/logos/css.svg';
 import { ReactComponent as Sass } from '../assets/static/logos/sass.svg';
 import { ReactComponent as Js } from '../assets/static/logos/js.svg';
@@ -12,6 +12,7 @@ import { ReactComponent as Mysql } from '../assets/static/logos/mysql.svg';
 import { ReactComponent as Phyton } from '../assets/static/logos/python.svg';
 import { ReactComponent as Cplusplus } from '../assets/static/logos/c++.svg';
 import { ReactComponent as Java } from '../assets/static/logos/java.svg';
+import { ReactComponent as Aws } from '../assets/static/logos/aws.svg';
 
 const Skills = () => {
 
@@ -28,41 +29,44 @@ const Skills = () => {
               <ReactLogo className='Skills__container-barImg' id='reactLogo' />
             </li>
             <li>
-              <AngularLogo className='Skills__container-barImg' />
-            </li>
-            <li>
               <Js className='Skills__container-barImg2' />
             </li>
             <li>
               <Css className='Skills__container-barImg' />
             </li>
             <li>
-              <Sass className='Skills__container-barImg' />
+              <Git className='Skills__container-barImg' />
+            </li>
+            {/* <li>
+              <Html className='Skills__container-barImg' />
+            </li> */}
+            <li>
+              <Cplusplus className='Skills__container-barImg' />
             </li>
             <li>
-              <Html className='Skills__container-barImg' />
+              <Java className='Skills__container-barImg' />
             </li>
           </ul>
         </div>
         <div className='Skills__container-bar1'>
           <ul>
             <li>
-              <Git className='Skills__container-barImg' />
+              <AngularLogo className='Skills__container-barImg' />
             </li>
             <li>
               <Ts className='Skills__container-barImg2' />
+            </li>
+            <li>
+              <Sass className='Skills__container-barImg' />
+            </li>
+            <li>
+              <Aws className='Skills__container-barImg2' />
             </li>
             <li>
               <Mysql className='Skills__container-barImg' />
             </li>
             <li>
               <Phyton className='Skills__container-barImg' />
-            </li>
-            <li>
-              <Cplusplus className='Skills__container-barImg' />
-            </li>
-            <li>
-              <Java className='Skills__container-barImg' />
             </li>
           </ul>
         </div>

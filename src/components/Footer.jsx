@@ -29,7 +29,7 @@ const Footer = (props) => {
           Fabricated by
           <strong>Andrés García © 2021.</strong>
           {' '}
-          Updated Sep, 2021.
+          Updated March, 2022.
         </h5>
       </div>
     </footer>

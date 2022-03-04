@@ -3,7 +3,7 @@ import '../assets/styles/components/Portfolio1.scss';
 
 const Portfolio1 = (props) => {
 
-  const { nameWeb, imgWeb, urlWeb } = props;
+  const { nameWeb, imgWeb, urlWeb, imgDevelop } = props;
 
   return (
     <section className='portfolio1'>
@@ -12,6 +12,7 @@ const Portfolio1 = (props) => {
           <img src={imgWeb} alt={nameWeb} />
         </div>
         <div className='portfolio1__link-details'>
+          <img src={imgDevelop} alt={nameWeb} />
           <h3>{nameWeb}</h3>
         </div>
         <div className='portfolio1__link-details2' />

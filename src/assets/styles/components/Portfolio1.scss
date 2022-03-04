@@ -54,12 +54,20 @@
       }
 
 .portfolio1__link-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   background: linear-gradient(to top,rgba(0, 0, 0, 0.8) 0%, transparent 100%);
 }
   .portfolio1__link-details>h3 {
  color: white;
   }
+.portfolio1__link-details>img {
+  width: 30px;
+  margin-right: 10px;
+}
   
   .portfolio1:hover .portfolio1__link-details {
   opacity: 1;
