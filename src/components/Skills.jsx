@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/styles/components/Skills.scss';
-// import { ReactComponent as Html } from '../assets/static/logos/html.svg';
+import { ReactComponent as Html } from '../assets/static/logos/html.svg';
 import { ReactComponent as Css } from '../assets/static/logos/css.svg';
 import { ReactComponent as Sass } from '../assets/static/logos/sass.svg';
 import { ReactComponent as Js } from '../assets/static/logos/js.svg';
@@ -13,6 +13,7 @@ import { ReactComponent as Phyton } from '../assets/static/logos/python.svg';
 import { ReactComponent as Cplusplus } from '../assets/static/logos/c++.svg';
 import { ReactComponent as Java } from '../assets/static/logos/java.svg';
 import { ReactComponent as Aws } from '../assets/static/logos/aws.svg';
+import { ReactComponent as Jira } from '../assets/static/logos/jira.svg';
 
 const Skills = () => {
 
@@ -37,9 +38,9 @@ const Skills = () => {
             <li>
               <Git className='Skills__container-barImg' />
             </li>
-            {/* <li>
+            <li>
               <Html className='Skills__container-barImg' />
-            </li> */}
+            </li>
             <li>
               <Cplusplus className='Skills__container-barImg' />
             </li>
@@ -61,6 +62,9 @@ const Skills = () => {
             </li>
             <li>
               <Aws className='Skills__container-barImg2' />
+            </li>
+            <li>
+              <Jira className='Skills__container-barImg3' />
             </li>
             <li>
               <Mysql className='Skills__container-barImg' />

@@ -12,7 +12,7 @@ const initialState = {
     { 'id': 1,
       'nameWeb': 'Fisentiva',
       'imgWeb': image.fisentiva,
-      'urlWeb': 'https://amazing-mclean-752457.netlify.app/',
+      'urlWeb': 'https://wwww.fisentiva.com/',
       'imgDevelop': image.react,
     },
     { 'id': 2,
