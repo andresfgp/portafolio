@@ -12,7 +12,7 @@ const initialState = {
     { 'id': 1,
       'nameWeb': 'Fisentiva',
       'imgWeb': image.fisentiva,
-      'urlWeb': 'https://wwww.fisentiva.com/',
+      'urlWeb': 'https://www.fisentiva.com/',
       'imgDevelop': image.react,
     },
     { 'id': 2,
