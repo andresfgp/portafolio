@@ -58,6 +58,10 @@ module.exports = { //modulo a exportar
       template: './public/index.html',
       filename: './index.html',
       favicon: './public/logo.png',
+      meta: {
+        'description': { name: 'description', contnet: 'Andrés Felipe García Patiño' },
+        'og:image': { property: 'og:image', content: './public/linkImage.png' },
+      },
     }),
     new MiniCssExtractPlugin({
       filename: 'assets/[name].css', //referencia para trabajar desde webpack con sass
