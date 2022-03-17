@@ -59,8 +59,8 @@ module.exports = { //modulo a exportar
       filename: './index.html',
       favicon: './public/logo.png',
       meta: {
-        'description': { name: 'description', contnet: 'Andrés Felipe García Patiño' },
-        'og:image': { property: 'og:image', content: './public/linkImage.png' },
+        'description': { name: 'description', content: 'Andrés Felipe García Patiño' },
+        'og:image': { property: 'og:image', content: './public/logo192.png' },
       },
     }),
     new MiniCssExtractPlugin({
