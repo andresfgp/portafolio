@@ -45,7 +45,7 @@ const Header = (props) => {
             <li>
               <a href='#contact'>
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
-                Contact at me!
+                Contact me!
               </a>
             </li>
           </ul>
